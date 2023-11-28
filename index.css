@@ -16,13 +16,15 @@ body {
     width: 100%;
     margin: 0px;
     text-align: center;
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 700;
 }
 .page-info {
     break-after: page;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .page-info .chart {
     width: 100%;
@@ -86,4 +88,21 @@ body {
 .chart .specs .spec-color:nth-child(2) span.color {
     background-color: #cccccc;
     color: #000000;
+}
+.top-students {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.top-students .subtitle {
+    width: 100%;
+    height: min-content;
+    padding-top: 30px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+.top-students .subtitle h3 {
+    margin: 0px;
+    font-size: 20px;
 }
