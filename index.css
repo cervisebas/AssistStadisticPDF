@@ -108,7 +108,8 @@ body {
 }
 .top-students .list {
     flex: 1;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
 }
 .top-students .list .item-student {
     width: 100%;
@@ -142,4 +143,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     margin-left: 18px;
+}
+.top-students .list hr {
+    width: calc(100% - 16px);
 }
